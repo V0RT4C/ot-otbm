@@ -13,5 +13,18 @@ export { Towns } from './lib/Towns.ts';
 export { Waypoint } from './lib/Waypoint.ts';
 export { Waypoints } from './lib/Waypoints.ts';
 
-export * from './types.d.ts';
-export * from './const.ts';
+export type {
+    NODE_TYPE_E,
+    IRootNode,
+    INode,
+    IOTBMVersionInfo,
+    INodeProperties,
+    ITileFlags
+} from './types.d.ts';
+
+export {
+    NODE_SPECIAL_BYTE,
+    NODE_TYPE,
+    TILE_STATE,
+    PROPERTY
+} from './const.ts';
