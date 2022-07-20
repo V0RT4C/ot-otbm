@@ -31,9 +31,9 @@ export class TreeTraverser extends Byt3s {
                 (byte === NODE_SPECIAL_BYTE.END && this[this.position - 2] !== NODE_SPECIAL_BYTE.ESCAPE_CHAR)
                 )
                 ||
-                ((byte === NODE_SPECIAL_BYTE.START && this[this.position - 2] === NODE_SPECIAL_BYTE.ESCAPE_CHAR && this[this.position - 3] === NODE_SPECIAL_BYTE.ESCAPE_CHAR)
+                ((byte === NODE_SPECIAL_BYTE.START && this[this.position - 2] === NODE_SPECIAL_BYTE.ESCAPE_CHAR && this[this.position - 3] === NODE_SPECIAL_BYTE.ESCAPE_CHAR && this[this.position - 4] !== NODE_SPECIAL_BYTE.ESCAPE_CHAR)
                 ||
-                (byte === NODE_SPECIAL_BYTE.END && this[this.position - 2] === NODE_SPECIAL_BYTE.ESCAPE_CHAR && this[this.position - 3] === NODE_SPECIAL_BYTE.ESCAPE_CHAR)
+                (byte === NODE_SPECIAL_BYTE.END && this[this.position - 2] === NODE_SPECIAL_BYTE.ESCAPE_CHAR && this[this.position - 3] === NODE_SPECIAL_BYTE.ESCAPE_CHAR && this[this.position - 4] !== NODE_SPECIAL_BYTE.ESCAPE_CHAR)
                 )
                ){
                 nextSpecialBytePosition = this.position - 1;

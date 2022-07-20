@@ -8,6 +8,11 @@ export class Byt3s extends Uint8Array {
         return val;
     }
 
+    public peekByte() {
+        const val = this[this.position] & 0xFF;
+        return val;
+    }
+
     public escapeReadByte(offset?: number) {
         return this._getEscapedValue(offset);
     }

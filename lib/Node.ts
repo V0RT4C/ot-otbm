@@ -20,7 +20,6 @@ export abstract class Node {
     }
 
     public setProperties(nodeBuffer : TreeTraverser, nodeEndPos : number){
-         
         while (nodeBuffer.position + 1 < nodeEndPos) {
           const byte = nodeBuffer.readByte();
 

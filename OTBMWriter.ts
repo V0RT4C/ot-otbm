@@ -87,10 +87,10 @@ export class OTBMWriter {
         this.buffer.escapeWriteUint16LE(node.width);
         //Height
         this.buffer.escapeWriteUint16LE(node.height);
-        //Itemminor
-        this.buffer.escapeWriteUint32LE(node.itemMinorVersion);
         //Itemmajor
         this.buffer.escapeWriteUint32LE(node.itemMajorVersion);
+        //Itemminor
+        this.buffer.escapeWriteUint32LE(node.itemMinorVersion);
     }
 
     private _writeTileArea(node : INode | TileArea) : void {

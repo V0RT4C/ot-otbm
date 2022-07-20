@@ -16,8 +16,8 @@ export class OTBMReader {
             const version = this._treeTraverser.escapeReadUint32LE(6);
             this._treeTraverser.escapeReadUint16LE();
             this._treeTraverser.escapeReadUint16LE();
-            const itemMinorVersion = this._treeTraverser.escapeReadUint32LE();
             const itemMajorVersion = this._treeTraverser.escapeReadUint32LE();
+            const itemMinorVersion = this._treeTraverser.escapeReadUint32LE();
             this._treeTraverser.position = oldPos;
             return { version, itemMajorVersion, itemMinorVersion };
         }

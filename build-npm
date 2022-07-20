@@ -1,0 +1,2 @@
+#!/bin/sh
+exec deno run -A scripts/build_npm.ts "$@"
