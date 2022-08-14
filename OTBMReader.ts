@@ -1,4 +1,4 @@
-import { OTBM_NODE_TYPE } from './const.ts';
+import { OTBM_NODE_TYPE, OTBM_NODE_SPECIAL_BYTE } from './const.ts';
 import { Byt3s } from './lib/Bytes.ts';
 import { OTBMHouseTile } from './lib/OTBMHouseTile.ts';
 import { OTBMItem } from './lib/OTBMItem.ts';
@@ -11,8 +11,6 @@ import { OTBMTown } from './lib/OTBMTown.ts';
 import { OTBMTowns } from './lib/OTBMTowns.ts';
 import { OTBMWaypoint } from './lib/OTBMWaypoint.ts';
 import { OTBMWaypoints } from './lib/OTBMWaypoints.ts';
-import { OTBM_NODE_SPECIAL_BYTE } from './mod.ts';
-
 
 export class OTBMReader extends Byt3s {
 
